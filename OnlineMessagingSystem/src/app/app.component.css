@@ -1,0 +1,127 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jul 29, 2020, 9:32:58 PM
+    Author     : vishant
+*/
+/* @media(min-width:831px){
+  #navbar{
+      display: none;
+  }
+}
+@media(max-width:831px){
+  #last{
+      display:none;
+  }
+  #navbar{
+      display:block;
+  }
+} */
+#navbar{
+  margin:15px  20px;
+}
+#navbar:focus{
+outline:none;
+}
+img {
+  border-radius: 50%;
+}
+.top,.bottom{
+    position:fixed;
+    width:100%;
+    z-index:1
+}
+.top{
+    top:0
+}
+.bottom{
+    bottom:0
+}
+.bar{
+    width:100%;
+    overflow: hidden
+}
+.white{
+     color:#000!important;
+     background-color:#fff!important
+}
+.bar{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16)
+}
+.bar-item{
+
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+}
+.wide{
+    letter-spacing:2px
+}
+.right{
+    float:right!important;
+
+}
+.hide-small{
+    display:none!important
+}
+.bar .dropdown-hover,.bar .dropdown-click{
+    position:static;
+    float:left
+}
+.button{
+    white-space:normal
+}
+
+.display-left{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/opacity/see-through */
+  color:lightgreen;
+  border:none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding:20px;
+  text-align:center;
+}
+.jumbo{
+    font-size:74px!important
+}
+.large{
+    font-size:36px!important
+}
+.display-container{
+    position:relative
+}
+.grayscale-min{filter:grayscale(50%)}
+
+.fa-hands-helping:hover ,.fa-home:hover,.fa-envelope:hover,.fa-user:hover {
+  padding: 10px;
+  color:white;
+}
+.fa-user-o:hover{
+    padding :10px;
+    color:black
+}
+.textc{
+
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold
+}
+

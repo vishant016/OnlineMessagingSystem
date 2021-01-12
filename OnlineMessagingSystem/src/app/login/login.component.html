@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+
+    <head>
+        <title>Login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="homecss.css"> -->
+        <script type="text/javascript" src="index.js"></script>
+        <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+            input[type=text]:focus ,input[type=password]:focus  {
+                 border: 3px solid #555;
+            }
+            input[type=text],input[type=password] {
+            width: 400px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            }
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+            }
+            label{
+                align-content: left;
+            }
+            .container{
+                padding:16px
+            }
+            a:hover{
+                color: darkblue;
+                font-size: 20px
+            }
+            button {
+                border-radius: 12px;
+                background-color:blue;
+                align-content: center
+            }
+            /* Full height image header */
+            .bgimg-1 {
+
+                background-position: center;
+                background-size: cover;
+                background-image: url("assets/images/loginback1.jpg");
+                height:700px;
+
+            }
+
+            .bar .button {
+                padding: 16px;
+            }
+        </style>
+    </head>
+    <body>
+
+
+
+        <div class="bgimg-1">
+            <div align="center">
+                   <form name="login1" id="form1">
+                    <br>
+                    <img src="assets/images/login photo.png" alt="Avatar">
+
+                    <br>
+                    <div>
+                        <br>
+                        <span class="textc">Email : </span><br>
+                        <input type="text" placeholder="Enter Email" [(ngModel)]="loginUserData.email" class="form-control" id="email" name="email" ><br>
+                        <h6 *ngIf="emailError" style="color: red;">Email is not correct</h6>
+                        <span class="textc">Password : </span><br>
+                        <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="loginUserData.password" class="form-control" id="pass"><br>
+                        <h6 *ngIf="passError" style="color: red;">password is not correct</h6>
+
+                        <button style="font-size: 20px" type="submit" class="btn btn-primary" name="button1" (click)="loginUser()">Login</button><br>
+
+                    </div>
+
+
+                </form>
+                  <br>
+                  <div>
+                    <a  style="color:red" routerLink="/forgot" routerLinkActive="active">forgot password </a>
+                  </div>
+
+                <div>
+                    <a  style="color:red" routerLink="/register" routerLinkActive="active">New user? Register </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </body>
+
+</html>

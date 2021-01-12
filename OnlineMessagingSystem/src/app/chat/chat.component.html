@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content=" width=device-width,initial-scale=1">
+
+
+   <!-- <script src="../../assets/js/chat.js"></script> -->
+  <script src="https://kit.fontawesome.com/11e03ece73.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- <script>
+             var children = document.getElementById( "chat-message" );
+     children.append('<div>hi i am vishant</div>');
+        </script>-->
+  <style>
+    body {
+      background-color: darkcyan;
+      height: 700px;
+    }
+
+    .bar .button {
+      padding: 16px;
+    }
+  </style>
+  <title> chat </title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row no-gutters" id="mainrow">
+      <div class="col-sm-4 no-gutters" id="leftpart" >
+        <div class="row no-gutters" style="height:17%">
+          <div class="col-sm-12">
+            <div class="settings-tray  ">
+              <img class=" profile-image no-gutters" src="../../assets/images/download.jpeg" alt="profile image">
+              <span class="settings-tray--right">
+                <i class="material-icons">cached</i>
+                <i class="material-icons">message</i>
+                <i class="material-icons">menu</i>
+              </span>
+            </div>
+            <div class="search-box border-right">
+
+              <i class="material-icons">search</i>
+              <input placeholder="Search here" id="search" type="text">
+
+            </div>
+          </div>
+
+        </div>
+<br>
+        <div class="row no-gutters" id="friends" style="height:72vh;overflow-y:auto;">
+          <div class="col-sm-12">
+
+
+
+              <div *ngFor="let user of users" id="friends-drawer" class="friend-drawer friend-drawer--onhover" >
+                  <img class="profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg" alt="">
+                  <div class="text">
+                      <h6 >{{user.username}}</h6>
+                      <p class="text-muted">Hey, how are you</p>
+                  </div>
+                  <span class="time text-muted small">10:00</span>
+              </div>
+
+
+
+          </div>
+        </div>
+        </div>
+
+
+        <div class="col-sm-8 no-gutters" id="rightpart" >
+
+
+          <div class="row" >
+              <div class="col-sm-12">
+                  <div class="settings-tray" style="border-left-style: ridge;border-left-color: #006666;">
+                      <div class="friend-drawer">
+                          <a href="javascript:window.location.href=window.location.href" ><span id="back" class="material-icons">
+                            keyboard_backspace
+                            </span></a>
+                          <img class=" profile-image" src="https://www.clarity-enhanced.net/wp-content/uploads/2020/06/robocop.jpg" alt="profile image">
+                          <div class="text">
+                              <h6>Group</h6>
+                          </div>
+                          <span class="settings-tray--right" >
+
+                               <i class="material-icons">message</i>
+                              <i class="material-icons">menu</i>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row" id="chat" style="height:73vh;overflow-y: auto;overflow-x:hidden;">
+
+              <div class="col-sm-12" id="chat-message">
+
+                  <br><br>
+
+              </div>
+          </div>
+          <div  class="row" id="chat" >
+              <div class="col-sm-12">
+                  <div class="chat-box--tray">
+                      <i class="material-icons">
+                          sentiment_satisfied_alt
+                      </i>
+                      <input type="text" id="message"  placeholder="Type your message..." >
+
+                      <button id="send-button" class="btn btn-link text-nowrap"> <i class="material-icons" id="send">
+                      send
+                          </i></button>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</body>
+
+</html>

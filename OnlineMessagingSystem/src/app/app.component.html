@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="homecss.css">  -->
+
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"  rel="stylesheet"  type='text/css'>
+<!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+            }
+
+            a:hover{
+                background-color:transparent;
+                color:blue;
+            }
+            /* Full height image header */
+            .bgimg-1 {
+
+                background-position: center;
+                background-size: cover;
+                background-color: teal;
+                background-image: url("back2.jpg");
+                min-height: 100%;
+            }
+
+            .bar .button {
+                padding: 16px;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="top">
+
+            <div class="bar white card " >
+
+
+
+                <div  class="right ">
+
+                  <a routerLink="/home" style="text-decoration:none" routerLinkActive="active" class="bar-item button wide"><i class="fa fa-home"></i>Home</a>
+               <div class="right" id="last">
+                  <a routerLink="/login" style="text-decoration:none" *ngIf="!isLoggedIn" routerLinkActive="active" class="bar-item button wide"><i class="fa fa-user"></i>Login/Register</a>
+                  <!-- <a href="#" style="text-decoration:none" routerLinkActive="active" class="bar-item button wide">About Us</a> -->
+                  <!-- <a href="#" style="text-decoration:none" routerLinkActive="active" class="bar-item button wide"><i class="fa fa-envelope"></i>Contact us</a> -->
+
+                  <a routerLink="/profile" style="text-decoration:none" *ngIf="isLoggedIn" routerLinkActive="active" class="bar-item button wide">profile</a>
+                  <a routerLink="/chat" style="text-decoration:none" *ngIf="isLoggedIn" routerLinkActive="active" class="bar-item button wide">chat</a>
+                  <a routerLink="/login" style="text-decoration:none" *ngIf="isLoggedIn" routerLinkActive="active" class="bar-item button wide"><i class="fa fa-sign-out"></i>Logout</a>
+                  <a href="admin.html" style="text-decoration:none" *ngIf="!isLoggedIn" routerLinkActive="active" class="bar-item button wide"><strong><i class="fa fa-user-o" ></i>ADMIN</strong></a>
+                  <a href="#" style="text-decoration:none" routerLinkActive="active" class="bar-item button   wide">  <i class="fa fa-hands-helping"></i>Help</a>
+
+                </div>
+                <!-- <button class="right btn btn-link" id="navbar" onclick="show_navbar()"><i class="fa fa-bars fa-2x"></i></button> -->
+            </div>
+
+            </div>
+        </div>
+<!--        <header class="bgimg-1 display-container grayscale-min">
+            <div class="  bg-text" style="padding:48px">
+                <span class="jumbo ">Start something that matters</span><br>
+
+                <span class=" large">Let's connect</span><br><br>
+
+            </div>
+
+
+        </header>-->
+
+
+<br><br>
+
+
+
+    </body>
+
+</html>
+<router-outlet></router-outlet>

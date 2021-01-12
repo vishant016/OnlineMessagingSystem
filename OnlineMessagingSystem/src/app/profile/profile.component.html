@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <script src= "https://kit.fontawesome.com/11e03ece73.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<style>
+     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+                background-color:darkcyan;
+            }
+              img{
+                border-radius: 50%;
+                height:200px;
+                width:250px
+            }
+            .row{
+                position: relative;
+            }
+            .col-sm-3{
+                position: relative;
+            }
+            a:hover{
+
+                background-color:lightslategrey
+            }
+
+            /* Full height image header */
+            .bgimg-1 {
+
+                background-position: center;
+                background-size: cover;
+                background-image: url("../../assets/images/back2.jpg");
+                min-height: 100%;
+            }
+
+            .bar .button {
+                padding: 16px;
+            }
+</style>
+
+    <title>Profile</title>
+</head>
+
+<body>
+
+
+
+        <br /><br />
+   <div class="container-fluid"  style="margin-top:50px">
+
+       <div class="row">
+           <div class="col-sm-3">
+                    <form action="editprofile.html">
+                        <br>
+                        <br>
+                        <img src="../../assets/images/download.jpeg"  >
+                        <br>
+                        <br>
+                        <p ><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VISHANT VAGHANI</strong> </p>
+
+
+
+                       <div class="panel panel-default">
+                           <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{bio}}</strong></p>
+                       </div>
+
+
+                       <div class="panel panel-default">
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{website}}</p>
+                       </div>
+
+
+
+
+                    </form>
+
+           </div>
+
+           <div class="col-sm-1"></div>
+
+
+           <div class="col-sm-5">
+
+               <br>
+               <br><br><br>
+               <div class="row">
+                   <div class="col-sm-4">
+                       <strong><h4>{{userName}}</h4></strong>
+                   </div>
+                   <div class="col-sm-6">
+
+
+                       <button  type="submit" routerLink='/editprofile' routerLinkActive='active' class="btn btn-primary" value="edit profile">Edit Profile</button>
+
+                   </div>
+               </div>
+               <hr>
+               <div class="row">
+                   <div class="col-sm-4">
+                       FOLLOWER
+                   </div>
+                    <div class="col-sm-6">
+                       FOLLOWING
+                   </div>
+
+               </div>
+
+
+
+               <div class="row">
+                   <div class="col-sm-4">
+                       <strong> 116</strong>
+                   </div>
+                    <div class="col-sm-6">
+                        <strong>100</strong>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+
+   </div>
+
+</body>
+
+</html>
